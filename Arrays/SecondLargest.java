@@ -14,16 +14,14 @@ class SecondLargest {
         }
         for(int i=0;i< arr.length;i++)
         {
-            if(arr[i]>sMax && arr[i]!=max)
+            if(arr[i]>sMax && arr[i]!=max && sMax!=Integer.MIN_VALUE)
             {
                 sMax=arr[i];
+            }else {
+                sMax=-1;
             }
         }
-        if(sMax==Integer.MIN_VALUE){
-            return -1;
-        }else {
-            return sMax;
-        }
+        return sMax;
 
     }
 
