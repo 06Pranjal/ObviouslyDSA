@@ -13,10 +13,19 @@ public class ArrayListProgram {
         arr.add(45);
 
         //to print the element
-        System.out.println(arr.get(3));
+        System.out.println("The 3rd element is "+arr.get(3));
 
         //to change the existing value
         arr.set(3,50);
-        System.out.println(arr.get(3));
+        System.out.println("The new value of 3rd element is "+arr.get(3));
+
+        //to calculate length
+        System.out.println("The Size of Array List is "+arr.size());
+
+        //to print complete list
+        System.out.println("The ArrayList is :-");
+        for(int i=0;i<arr.size();i++){
+            System.out.print(arr.get(i)+" ");
+        }
     }
 }
