@@ -27,5 +27,13 @@ public class ArrayListProgram {
         for(int i=0;i<arr.size();i++){
             System.out.print(arr.get(i)+" ");
         }
+
+        System.out.println();
+        System.out.println("Element got inserted");
+
+        //to insert a element on the particular index
+        arr.add(2,100);
+
+        System.out.println(arr);
     }
 }
