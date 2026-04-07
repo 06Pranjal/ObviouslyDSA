@@ -13,6 +13,10 @@ public class ArrayListProgram {
         arr.add(45);
 
         //to print the element
-        System.out.println(arr.get(2));
+        System.out.println(arr.get(3));
+
+        //to change the existing value
+        arr.set(3,50);
+        System.out.println(arr.get(3));
     }
 }
